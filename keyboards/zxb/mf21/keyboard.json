@@ -1,0 +1,163 @@
+{
+    "manufacturer": "FK5019UB",
+    "keyboard_name": "MF21",
+    "maintainer": "bill",
+    "processor": "STM32F072",
+    "bootloader": "stm32-dfu",
+    "url": "",
+    "features": {
+        "bootmagic": true,
+        "command":   false,
+        "console":   false,
+        "extrakey":  true,
+        "mousekey":  true,
+        "nkro":       true,
+        "rgb_matrix": true,
+        "backlight": false,
+        "rgblight": false
+    },
+    "usb": {
+        "vid": "0x0227",
+        "pid": "0x6964",
+        "device_version": "0.0.1",
+        "force_nkro": true,
+        "polling_interval": 2
+    },
+    "matrix_pins": {
+        "cols": ["A10", "B13", "B14", "A8"],
+        "rows": ["B3" , "B4" , "B5" , "A15", "B12","A3"]
+    },
+    "diode_direction": "COL2ROW",
+    "indicators": {
+        "num_lock": "B8"
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
+    "ws2812": {
+        "pin": "A6",
+        "driver": "pwm"
+    },
+    "rgb_matrix": {
+        "sleep": true,
+        "led_flush_limit": 7,
+        "led_process_limit": 21,
+        "max_brightness": 250,
+        "default":{
+                "animation":"cycle_all"
+                },
+        "animations": {
+                "solid_color": true,
+                "alphas_mods": true,
+                "gradient_up_down": true,
+                "gradient_left_right": true,
+                "breathing": true,
+                "band_sat": true,
+                "band_val": true,
+                "band_pinwheel_sat": true,
+                "band_pinwheel_val": true,
+                "band_spiral_sat": true,
+                "band_spiral_val": true,
+                "cycle_all": true,
+                "cycle_left_right": true,
+                "cycle_up_down": true,
+                "cycle_out_in": true,
+                "cycle_out_in_dual": true,
+                "rainbow_moving_chevron": true,
+                "cycle_pinwheel": true,
+                "cycle_spiral": true,
+                "dual_beacon": true,
+                "rainbow_beacon": true,
+                "rainbow_pinwheels": true,
+                "raindrops": true,
+                "jellybean_raindrops": true,
+                "hue_breathing": true,
+                "hue_pendulum": true,
+                "hue_wave": true,
+                "pixel_fractal": true,
+                "pixel_flow": true,
+                "pixel_rain": true,
+                "typing_heatmap": true,
+                "digital_rain": true,
+                "solid_reactive_simple": true,
+                "solid_reactive": true,
+                "solid_reactive_wide": true,
+                "solid_reactive_multiwide": true,
+                "solid_reactive_cross": true,
+                "solid_reactive_multicross": true,
+                "solid_reactive_nexus": true,
+                "solid_reactive_multinexus": true,
+                "splash": true,
+                "multisplash": true,
+                "solid_splash": true,
+                "solid_multisplash": true
+             },
+        "driver": "ws2812",
+        "layout": [
+                {"flags": 4, "matrix":[5,3], "x":168, "y":45},
+                {"flags": 4, "matrix":[5,1], "x":112,  "y":50},
+                {"flags": 4, "matrix":[5,0], "x":25,  "y":50},
+
+                {"flags": 4, "matrix":[4,2], "x":112,"y":40},
+                {"flags": 4, "matrix":[4,1], "x":56, "y":40},
+                {"flags": 4, "matrix":[4,0], "x":0,  "y":40},
+
+                {"flags": 4, "matrix":[3,3], "x":168, "y":35},
+                {"flags": 4, "matrix":[3,2], "x":112, "y":30},
+                {"flags": 4, "matrix":[3,1], "x":56,  "y":30},
+                {"flags": 4, "matrix":[3,0], "x":0,   "y":30},
+
+                {"flags": 4, "matrix":[2,2], "x":112, "y":20},
+                {"flags": 4, "matrix":[2,1], "x":56,  "y":20},
+                {"flags": 4, "matrix":[2,0], "x":0,   "y":20},
+
+                {"flags": 4, "matrix":[1,3], "x":168, "y":10},
+                {"flags": 4, "matrix":[1,2], "x":112, "y":10},
+                {"flags": 4, "matrix":[1,1], "x":56,  "y":10},
+                {"flags": 4, "matrix":[1,0], "x":0,   "y":10},
+
+                {"flags": 4, "matrix":[0,3], "x":168, "y":0},
+                {"flags": 4, "matrix":[0,2], "x":112, "y":0},
+                {"flags": 4, "matrix":[0,1], "x":56,  "y":0},
+                {"flags": 4, "matrix":[0,0], "x":0,   "y":0},
+
+                {"flags": 1, "x":35, "y":5}
+            ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout":
+                [
+                { "matrix": [0, 0], "x": 0, "y": 0 },
+                { "matrix": [0, 1], "x": 1, "y": 0 },
+                { "matrix": [0, 2], "x": 2, "y": 0 },
+                { "matrix": [0, 3], "x": 3, "y": 0 },
+
+                { "matrix": [1, 0], "x": 0, "y": 1 },
+                { "matrix": [1, 1], "x": 1, "y": 1 },
+                { "matrix": [1, 2], "x": 2, "y": 1 },
+                { "matrix": [1, 3], "x": 3, "y": 1 },
+
+                { "matrix": [2, 0], "x": 0, "y": 2 },
+                { "matrix": [2, 1], "x": 1, "y": 2 },
+                { "matrix": [2, 2], "x": 2, "y": 2 },
+
+                { "matrix": [3, 0], "x": 0, "y": 3 },
+                { "matrix": [3, 1], "x": 1, "y": 3 },
+                { "matrix": [3, 2], "x": 2, "y": 3 },
+                { "matrix": [3, 3], "x": 3, "y": 2, "h": 2 },
+
+                { "matrix": [4, 0], "x": 0, "y": 4 },
+                { "matrix": [4, 1], "x": 1, "y": 4 },
+                { "matrix": [4, 2], "x": 2, "y": 4 },
+
+                { "matrix": [5, 0], "x": 0, "y": 5, "w": 2 },
+                { "matrix": [5, 1], "x": 1, "y": 5 },
+                { "matrix": [5, 3], "x": 3, "y": 4, "h": 2 }
+            ]
+        }
+    }
+}
